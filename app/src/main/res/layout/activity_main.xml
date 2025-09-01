@@ -1,104 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#111111"
+    android:padding="24dp">
 
-    <TextView
-        android:id="@+id/txt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inicia Sesion"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+    <!-- Título principal "Iniciar Sesión" -->
+<TextView
+    android:id="@+id/txtTituloLogin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Iniciar\nSesión"
+    android:textColor="#FFFFFF"
+    android:textSize="100dp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:layout_marginBottom="48dp" />
 
-    <TextView
-        android:id="@+id/txt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Correo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
+    <!-- Label del correo -->
+<TextView
+    android:id="@+id/txtLabelCorreo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Correo"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:layout_marginBottom="4dp" />
 
+    <!-- Campo de correo -->
     <EditText
-        android:id="@+id/inputCorreo"
-        android:layout_width="196dp"
-        android:layout_height="38dp"
-        android:contentDescription="Null"
-        android:ems="10"
-        android:hint="e.y 8"
+        android:id="@+id/edtCorreo"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#FFFFFF"
+        android:hint="Ingresa tu correo"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.236" />
+        android:padding="12dp"
+        android:textColor="#000000" />
 
-    <TextView
-        android:id="@+id/txt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contraseña"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+    <!-- Label de contraseña -->
+<TextView
+    android:id="@+id/txtLabelPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Contraseña"
+    android:textColor="#FFFFFF"
+    android:textSize="20sp"
+    android:layout_marginBottom="4dp" />
 
+    <!-- Campo de contraseña -->
     <EditText
-        android:id="@+id/inputPassword"
-        android:layout_width="193dp"
-        android:layout_height="44dp"
-        android:contentDescription="Null"
-        android:ems="10"
-        android:hint="e.g 8"
+        android:id="@+id/edtPassword"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="#FFFFFF"
+        android:hint="Ingresa tu contraseña"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.213"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
+        android:padding="12dp"
+        android:textColor="#000000" />
 
-    <Button
-        android:id="@+id/btnIniciarS"
-        android:layout_width="wrap_content"
+    <!-- Botones lado a lado -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar sesion"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474" />
+        android:orientation="horizontal"
+        android:gravity="space_between">
 
+<!-- Botón Registrate -->
     <Button
-        android:id="@+id/btnRegistrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.834"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.474"
-        android:onClick="cambio" />
+        android:id="@+id/btnRegistrate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="150px"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:text="Registrate"
+        android:textColor="#000000" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!-- Botón Iniciar Sesión (texto en dos líneas) -->
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Iniciar\nSesión"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:padding="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,31 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ventana">
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#F5FAFC"
+    android:padding="24dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hola mundo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Título principal -->
+<TextView
+android:id="@+id/txtTituloRegister"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Registrate"
+android:textColor="#000000"
+android:textSize="36sp"
+android:gravity="center"
+android:textStyle="bold"
+android:layout_marginBottom="32dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.096" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Nombre -->
+<TextView
+android:id="@+id/txtLabelNombre"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Nombre"
+android:textColor="#000000"
+android:textSize="18sp"
+android:layout_marginBottom="4dp" />
+
+<EditText
+android:id="@+id/edtNombre"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Ingresa tu nombre"
+android:background="#DDDDDD"
+android:inputType="textPersonName"
+android:textColor="#000000"
+android:padding="12dp"
+android:layout_marginBottom="12dp" />
+
+    <!-- Apellido -->
+<TextView
+android:id="@+id/txtLabelApellido"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Apellido"
+android:textColor="#000000"
+android:textSize="18sp"
+android:layout_marginBottom="4dp" />
+
+<EditText
+android:id="@+id/edtApellido"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Ingresa tu apellido"
+android:background="#DDDDDD"
+android:inputType="textPersonName"
+android:textColor="#000000"
+android:padding="12dp"
+android:layout_marginBottom="12dp" />
+
+    <!-- Correo -->
+<TextView
+android:id="@+id/txtLabelCorreoRegister"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Correo"
+android:textColor="#000000"
+android:textSize="18sp"
+android:layout_marginBottom="4dp" />
+
+<EditText
+android:id="@+id/edtCorreoRegister"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Ingresa tu correo"
+android:background="#DDDDDD"
+android:inputType="textEmailAddress"
+android:textColor="#000000"
+android:padding="12dp"
+android:layout_marginBottom="12dp" />
+
+    <!-- Edad -->
+<TextView
+android:id="@+id/txtLabelEdad"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Edad"
+android:textColor="#000000"
+android:textSize="18sp"
+android:layout_marginBottom="4dp" />
+
+<EditText
+android:id="@+id/edtEdad"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Ingresa tu edad"
+android:background="#DDDDDD"
+android:inputType="number"
+android:textColor="#000000"
+android:padding="12dp"
+android:layout_marginBottom="12dp" />
+
+    <!-- Rut -->
+<TextView
+android:id="@+id/txtLabelRut"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Rut"
+android:textColor="#000000"
+android:textSize="18sp"
+android:layout_marginBottom="4dp" />
+
+<EditText
+android:id="@+id/edtRut"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="Ingresa tu RUT"
+android:background="#DDDDDD"
+android:inputType="number"
+android:textColor="#000000"
+android:padding="12dp"
+android:layout_marginBottom="24dp" />
+
+    <!-- Botones lado a lado -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="space_between">
+
+<!-- Botón Volver -->
+<Button
+    android:id="@+id/btnVolver"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:text="Volver"
+    android:textColor="#FFFFFF"
+    android:background="#000000"
+    android:layout_marginRight="8dp"
+    android:padding="16dp" />
+
+<!-- Botón Registrarse -->
+<Button
+    android:id="@+id/btnRegistrarse"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:text="Registrarse"
+    android:textColor="#FFFFFF"
+    android:background="#000000"
+    android:padding="16dp" />
+</LinearLayout>
+
+    </LinearLayout>
