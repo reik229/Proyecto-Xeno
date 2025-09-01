@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
 
                     // Aquí podrías abrir otra pantalla (ejemplo Ventana.java)
-                    Intent intent = new Intent(MainActivity.this, Ventana.class); // Creamos el "puente" para ir a la otra pantalla
-                    startActivity(intent); // Cambiamos a la pantalla Ventana
+                    Intent intent = new Intent(MainActivity.this, BienvenidaActivity.class); // Creamos el "puente" para ir a la otra pantalla
+                    startActivity(intent); // Cambiamos a la pantalla De Bienvenida
                 }
             }
         });
