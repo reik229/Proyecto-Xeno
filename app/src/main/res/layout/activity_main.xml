@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -24,6 +25,7 @@
     android:id="@+id/txtLabelCorreo"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
     android:text="Correo"
     android:textColor="#FFFFFF"
     android:textSize="20sp"
@@ -46,6 +48,7 @@
     android:id="@+id/txtLabelPassword"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
     android:text="Contraseña"
     android:textColor="#FFFFFF"
     android:textSize="20sp"
@@ -71,27 +74,32 @@
         android:gravity="center_horizontal">
 
 <!-- Botón Registrate -->
-    <Button
-        android:id="@+id/btnRegistrate"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_marginRight="150px"
-        android:layout_weight="1"
-        android:background="#FFFFFFFF"
-        android:padding="10dp"
-        android:text="Registrate"
-        android:textColor="#000000" />
+        <Button
+            android:id="@+id/btnRegistrate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFFFF"
+            android:padding="10dp"
+            android:text="Registrate"
+            android:textColor="#000000"
+            app:cornerRadius="@dimen/cardview_default_radius" />
 
 <!-- Botón Iniciar Sesión (texto en dos líneas) -->
-    <Button
-        android:id="@+id/btnIniciarSesion"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:text="Iniciar\nSesión"
-        android:textColor="#000000"
-        android:background="#FFFFFFFF"
-        android:padding="10dp" />
+        <Button
+            android:id="@+id/btnIniciarSesion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFFFF"
+            android:padding="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Iniciar\nSesión"
+            android:textColor="#000000"
+            app:cornerRadius="@dimen/cardview_default_radius" />
 
     </LinearLayout>
 

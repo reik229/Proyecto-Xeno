@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Por favor completa todos los campos", Toast.LENGTH_SHORT).show();
                 } else {
                     // Si no están vacíos, mostramos un mensaje simulando un login exitoso
-                    Toast.makeText(MainActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Iniciaste Sesión", Toast.LENGTH_SHORT).show();
 
                     // Aquí podrías abrir otra pantalla (ejemplo Ventana.java)
                     Intent intent = new Intent(MainActivity.this, BienvenidaActivity.class); // Creamos el "puente" para ir a la otra pantalla

@@ -1,155 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
     android:background="#F5FAFC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:padding="24dp">
 
     <!-- Título principal -->
-<TextView
-    android:id="@+id/txtTituloRegister"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Registrate"
-    android:textColor="#000000"
-    android:textSize="50sp"
-    android:gravity="center"
-    android:textStyle="bold"
-    android:layout_marginBottom="32dp" />
+    <TextView
+        android:id="@+id/txtTituloRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Registrate"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
     <!-- Nombre -->
-<TextView
-android:id="@+id/txtLabelNombre"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Nombre"
-android:textColor="#000000"
-android:textSize="18sp"
-android:layout_marginBottom="4dp" />
+    <TextView
+        android:id="@+id/txtLabelNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Nombre"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
-<EditText
-android:id="@+id/edtNombre"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:background="#DDDDDD"
-android:inputType="textPersonName"
-android:textColor="#000000"
-android:padding="12dp"
-android:layout_marginBottom="12dp" />
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#DDDDDD"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="#000000" />
 
     <!-- Apellido -->
-<TextView
-android:id="@+id/txtLabelApellido"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Apellido"
-android:textColor="#000000"
-android:textSize="18sp"
-android:layout_marginBottom="4dp" />
+    <TextView
+        android:id="@+id/txtLabelApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Apellido"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
-<EditText
-android:id="@+id/edtApellido"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:background="#DDDDDD"
-android:inputType="textPersonName"
-android:textColor="#000000"
-android:padding="12dp"
-android:layout_marginBottom="12dp" />
+    <EditText
+        android:id="@+id/edtApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#DDDDDD"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="#000000" />
 
     <!-- Correo -->
-<TextView
-android:id="@+id/txtLabelCorreoRegister"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Correo"
-android:textColor="#000000"
-android:textSize="18sp"
-android:layout_marginBottom="4dp" />
+    <TextView
+        android:id="@+id/txtLabelCorreoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Correo"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
-<EditText
-android:id="@+id/edtCorreoRegister"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:background="#DDDDDD"
-android:inputType="textEmailAddress"
-android:textColor="#000000"
-android:padding="12dp"
-android:layout_marginBottom="12dp" />
+    <EditText
+        android:id="@+id/edtCorreoRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#DDDDDD"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="#000000" />
 
     <!-- Edad -->
-<TextView
-android:id="@+id/txtLabelEdad"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Edad"
-android:textColor="#000000"
-android:textSize="18sp"
-android:layout_marginBottom="4dp" />
+    <TextView
+        android:id="@+id/txtLabelEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Edad"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
-<EditText
-android:id="@+id/edtEdad"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:background="#DDDDDD"
-android:inputType="number"
-android:textColor="#000000"
-android:padding="12dp"
-android:layout_marginBottom="12dp" />
+    <EditText
+        android:id="@+id/edtEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#DDDDDD"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="#000000" />
 
-    <!-- Rut -->
-<TextView
-android:id="@+id/txtLabelRut"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:text="Rut"
-android:textColor="#000000"
-android:textSize="18sp"
-android:layout_marginBottom="4dp" />
+    <!-- Contraseña -->
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Contraseña"
+        android:textColor="#000000"
+        android:textSize="18sp" />
 
-<EditText
-android:id="@+id/edtRut"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:background="#DDDDDD"
-android:inputType="number"
-android:textColor="#000000"
-android:padding="12dp"
-android:layout_marginBottom="24dp" />
+    <EditText
+        android:id="@+id/edtRut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#DDDDDD"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textColor="#000000" />
 
     <!-- Botones lado a lado -->
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="horizontal"
-android:gravity="center_horizontal">
-
-<!-- Botón Volver -->
-    <Button
-        android:id="@+id/btnVolver"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="8dp"
-        android:layout_weight="1"
-        android:background="#070707"
-        android:padding="16dp"
-        android:text="Volver"
-        android:textSize="20dp"
-        android:textColor="#FFFFFF" />
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-<!-- Botón Registrarse -->
-    <Button
-        android:id="@+id/btnRegistrarse"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#070707"
-        android:padding="16dp"
-        android:text="Registrarse"
-        android:textSize="20dp"
-        android:textColor="#FFFFFF" />
-</LinearLayout>
+        <!-- Botón Volver -->
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#070707"
+            android:padding="16dp"
+            android:text="Volver"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:cornerRadius="@dimen/cardview_default_radius" />
 
+        <!-- Botón Registrarse -->
+        <Button
+            android:id="@+id/btnRegistrarse"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#070707"
+            android:padding="16dp"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:cornerRadius="@dimen/cardview_default_radius" />
     </LinearLayout>
+
+</LinearLayout>

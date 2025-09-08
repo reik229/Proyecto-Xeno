@@ -15,7 +15,7 @@ public class Ventana extends AppCompatActivity {
     private EditText etApellido;  // Campo para ingresar el apellido
     private EditText etCorreo;    // Campo para ingresar el correo
     private EditText etEdad;      // Campo para ingresar la edad
-    private EditText etRut;       // Campo para ingresar el RUT
+    private EditText etPassword;       // Campo para ingresar Contraseña
 
     // Declaración de los botones
     private Button btnVolver;     // Botón que regresa al Login
@@ -31,7 +31,7 @@ public class Ventana extends AppCompatActivity {
         etApellido = findViewById(R.id.edtApellido);     // Apellido
         etCorreo = findViewById(R.id.edtCorreoRegister);         // Correo electrónico
         etEdad = findViewById(R.id.edtEdad);             // Edad
-        etRut = findViewById(R.id.edtRut);               // Rut
+        etPassword = findViewById(R.id.edtRut);               // Contraseña
 
         // Relacionamos los botones con los elementos del XML
         btnVolver = findViewById(R.id.btnVolver);       // Botón "Volver"
@@ -57,10 +57,11 @@ public class Ventana extends AppCompatActivity {
                 String apellido = etApellido.getText().toString().trim(); // Apellido ingresado
                 String correo = etCorreo.getText().toString().trim();   // Correo ingresado
                 String edad = etEdad.getText().toString().trim();       // Edad ingresada
-                String rut = etRut.getText().toString().trim();         // Rut ingresado
+                String password = etPassword.getText().toString().trim();         // Contraseña ingresada
 
                 // Validamos que no queden campos vacíos
-                if (nombre.isEmpty() || apellido.isEmpty() || correo.isEmpty() || edad.isEmpty() || rut.isEmpty()) {
+
+                if (nombre.isEmpty() || apellido.isEmpty() || correo.isEmpty() || edad.isEmpty() || password.isEmpty()) {
                     // Mostramos un mensaje en pantalla avisando al usuario
                     Toast.makeText(Ventana.this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
                 } else {
