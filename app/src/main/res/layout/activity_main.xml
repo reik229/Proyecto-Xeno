@@ -75,24 +75,19 @@
         <!-- Botón iniciar sesión -->
         <Button
             android:id="@+id/btnIniciarSesion"
-            style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#FFFFFF"
-            android:backgroundTint="#FFFCFC"
-            android:foregroundTint="#FFFFFF"
             android:padding="16dp"
             android:text="Iniciar Sesión"
             android:textColor="#000000"
-            android:textStyle="bold"
-            app:cornerRadius="@dimen/cardview_default_radius" />
+            android:textStyle="bold" />
 
         <!-- Botón registrarse -->
         <Button
             android:id="@+id/btnRegistrarse"
-            style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
