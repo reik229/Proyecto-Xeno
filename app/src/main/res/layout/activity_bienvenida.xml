@@ -49,22 +49,22 @@
 
         <!-- Botón ¿Quiénes Somos? (cuadrado) -->
         <Button
-            android:id="@+id/btnQuienesSomos"
+            android:id="@+id/btnPerfil"
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="#BEBEBE"
-            android:text="¿Quiénes Somos?"
+            android:text="Ver Perfil"
             android:textColor="#4F4F4F"
             android:textStyle="bold" />
 
         <!-- Botón Ver tabla (cuadrado) -->
         <Button
-            android:id="@+id/btnVerTabla"
+            android:id="@+id/btnListaUsuarios"
             android:layout_width="150dp"
             android:layout_height="80dp"
             android:backgroundTint="#BEBEBE"
-            android:text="Ver Tabla"
+            android:text="Ver Lista de Usuarios"
             android:textColor="#4F4F4F"
             android:textStyle="bold" />
     </LinearLayout>
