@@ -13,6 +13,8 @@ import android.widget.TextView;
  */
 public class ActividadBienvenida extends AppCompatActivity {
 
+    Button btnmap;
+
     private TextView tvBienvenida;
     private Button btnPerfil, btnListaUsuarios;
 
@@ -20,6 +22,16 @@ public class ActividadBienvenida extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bienvenida);
+
+        btnmap = findViewById(R.id.btnmap);
+
+        btnmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActividadBienvenida.this.getApplicationContext(), mapa.class);
+                startActivity(intent);
+            }
+        });
 
         // Inicializamos vistas
         tvBienvenida = findViewById(R.id.tvBienvenida);
@@ -50,5 +62,9 @@ public class ActividadBienvenida extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+
     }
 }

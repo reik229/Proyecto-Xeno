@@ -69,5 +69,13 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnmap"
+        android:layout_width="182dp"
+        android:textColor="#070707"
+        android:backgroundTint="#BEBEBE"
+        android:layout_height="wrap_content"
+        android:text="Nuestra ubicacion" />
+
 </LinearLayout>
 

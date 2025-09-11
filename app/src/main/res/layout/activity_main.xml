@@ -79,11 +79,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:background="#FFFFFF"
+            android:backgroundTint="@color/white"
             android:padding="16dp"
             android:text="Iniciar Sesión"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/cardview_default_radius" />
 
         <!-- Botón registrarse -->
         <Button
@@ -92,11 +93,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_weight="1"
-            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
             android:padding="16dp"
             android:text="Registrarse"
             android:textColor="#000000"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/cardview_default_radius" />
 
     </LinearLayout>
 
