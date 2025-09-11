@@ -12,13 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoAndroid">
         <activity
-            android:name=".Ventana"
+            android:name=".ActividadBienvenida"
             android:exported="false" />
         <activity
-            android:name=".BienvenidaActivity"
+            android:name=".ActividadListaUsuarios"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ActividadPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadRegistro"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadPrincipal"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
