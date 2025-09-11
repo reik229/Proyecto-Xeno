@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.1" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -9,27 +9,26 @@
     android:padding="24dp">
 
     <!-- Título principal "Iniciar Sesión" -->
-<TextView
-    android:id="@+id/txtTituloLogin"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Iniciar\nSesión"
-    android:textColor="#FFFFFF"
-    android:textSize="100dp"
-    android:gravity="center"
-    android:textStyle="bold"
-    android:layout_marginBottom="48dp" />
+    <TextView
+        android:id="@+id/txtTituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar\nSesión"
+        android:textColor="#FFFFFF"
+        android:textSize="100dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp" />
 
     <!-- Label del correo -->
-<TextView
-    android:id="@+id/txtLabelCorreo"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="25dp"
-    android:text="Correo"
-    android:textColor="#FFFFFF"
-    android:textSize="20sp"
-    android:layout_marginBottom="4dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:text="Correo"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginBottom="4dp" />
 
     <!-- Campo de correo -->
     <EditText
@@ -44,62 +43,65 @@
         android:textColor="#000000" />
 
     <!-- Label de contraseña -->
-<TextView
-    android:id="@+id/txtLabelPassword"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingLeft="25dp"
-    android:text="Contraseña"
-    android:textColor="#FFFFFF"
-    android:textSize="20sp"
-    android:layout_marginBottom="4dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:text="Contraseña"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginBottom="4dp" />
 
     <!-- Campo de contraseña -->
     <EditText
         android:id="@+id/edtContrasena"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="16dp"
         android:background="#FFFFFF"
         android:hint="Ingresa tu contraseña"
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColor="#000000" />
 
-    <!-- Botones lado a lado -->
+    <!-- Contenedor horizontal para los botones -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:gravity="center"
+        android:layout_marginTop="16dp">
 
-<!-- Botón Registrate -->
-        <Button
-            android:id="@+id/btnRegistrate"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_weight="1"
-            android:backgroundTint="#FFFFFFFF"
-            android:padding="10dp"
-            android:text="Registrate"
-            android:textColor="#000000"
-            app:cornerRadius="@dimen/cardview_default_radius" />
-
-<!-- Botón Iniciar Sesión (texto en dos líneas) -->
+        <!-- Botón iniciar sesión -->
         <Button
             android:id="@+id/btnIniciarSesion"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_margin="4dp"
             android:layout_weight="1"
-            android:backgroundTint="#FFFFFFFF"
-            android:padding="10dp"
-            android:paddingLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text="Iniciar\nSesión"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFCFC"
+            android:foregroundTint="#FFFFFF"
+            android:padding="16dp"
+            android:text="Iniciar Sesión"
             android:textColor="#000000"
+            android:textStyle="bold"
             app:cornerRadius="@dimen/cardview_default_radius" />
+
+        <!-- Botón registrarse -->
+        <Button
+            android:id="@+id/btnRegistrarse"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="Registrarse"
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
