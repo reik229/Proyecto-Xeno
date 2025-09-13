@@ -18,7 +18,7 @@
         android:textColor="#4F4F4F"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Foto de perfil circular -->
+    <!-- Foto de perfil  -->
     <ImageView
         android:id="@+id/ivPerfil"
         android:layout_width="200dp"
@@ -28,16 +28,6 @@
         android:layout_marginBottom="12dp"
         android:background="@drawable/fondo"/>
 
-    <!-- Nombre de usuario -->
-    <TextView
-        android:id="@+id/tvUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Usuario"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        android:textColor="#4F4F4F"
-        android:layout_marginBottom="50dp"/>
 
     <!-- Contenedor horizontal para los botones, más abajo -->
     <LinearLayout
@@ -45,9 +35,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="100dp">  <!-- Aquí los bajamos -->
+        android:layout_marginTop="100dp">
 
-        <!-- Botón ¿Quiénes Somos? (cuadrado) -->
+        <!-- Botón ver perfil -->
         <Button
             android:id="@+id/btnPerfil"
             android:layout_width="150dp"
@@ -58,7 +48,7 @@
             android:textColor="#4F4F4F"
             android:textStyle="bold" />
 
-        <!-- Botón Ver tabla (cuadrado) -->
+        <!-- Botón lista de usuarios -->
         <Button
             android:id="@+id/btnListaUsuarios"
             android:layout_width="150dp"
