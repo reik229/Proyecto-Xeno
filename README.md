@@ -1,1 +1,1 @@
-Erick mamano y Matias aravena
+Erick Mamani y Matias Aravena.
