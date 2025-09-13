@@ -100,7 +100,7 @@
         android:padding="12dp"
         android:textColor="#000000" />
 
-    <!-- Contraseña -->
+    <!-- Contraseña mediante números -->
     <TextView
         android:id="@+id/txtLabel"
         android:layout_width="match_parent"
